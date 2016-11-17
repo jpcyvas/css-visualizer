@@ -8,7 +8,7 @@
     <meta name="description" content="A set of music visualizers that are made entirely using DOM elements and CSS3 Animations and Transforms. There is no SVG, Canvas, WebGL, or visual plug-in used.">
     <meta name="keywords" content="CSS3, Music Visualizers, Visualizers, DOM, CSS Animations, CSS Transforms, audio player, open-source, rendering performance.">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    
+
     <!-- Facebook page specifics -->
     <meta property="og:title" content="CSS Visualizers, visualizing audio data with 'divs'.">
     <meta property="og:description" content="A set of music visualizers that are made entirely using DOM elements and CSS3 Animations and Transforms. There is no SVG, Canvas, WebGL, or visual plug-in used.">
@@ -26,7 +26,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Chris Dolphin">
-    
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 
@@ -58,7 +58,7 @@
                             <button id="play-pause" class="ui-btn" title="Play/Pause"></button>
                             <button id="next" class="ui-btn" title="Next"></button>
                             <button id="fullscreen" class="ui-btn" title="Fullscreen"></button>
-                            <a target="_blank" id="about" href="http://github.com/likethemammal/css-visualizer" title="About, Github page" class="ui-btn"></a>
+                            <!-- <a target="_blank" id="about" href="http://github.com/likethemammal/css-visualizer" title="About, Github page" class="ui-btn"></a> -->
                         </div>
                         <!--<input id="search-input" type="search" title="Enter song name, genre, or artist">-->
                         <!--<button id="search-btn" class="ui-btn" title="Search"></button>-->
@@ -138,7 +138,7 @@ var prefix = (function () {
   var styles = window.getComputedStyle(document.documentElement, ''),
     pre = (Array.prototype.slice
       .call(styles)
-      .join('') 
+      .join('')
       .match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o'])
     )[1],
     dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
